@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "B-501",
+      "label": "Boiler B-501",
+      "type": "Equipment",
+      "details": "High-Pressure Steam Boiler. Critical utility asset. Design pressure: 30 kg/cm2."
+    },
+    {
+      "id": "P-102A",
+      "label": "Pump P-102A",
+      "type": "Equipment",
+      "details": "Centrifugal Barrier Fluid Pump. Model-X. Dual mechanical seal plan 53B."
+    },
+    {
+      "id": "C-301",
+      "label": "Compressor C-301",
+      "type": "Equipment",
+      "details": "Reciprocating Gas Compressor handling highly flammable hydrocarbons."
+    },
+    {
+      "id": "CV-402",
+      "label": "Control Valve CV-402",
+      "type": "Equipment",
+      "details": "Fuel Gas Flow Control Valve. Air-to-open safety position."
+    },
+    {
+      "id": "doc-001",
+      "label": "SOP-B501-STARTUP",
+      "type": "Document",
+      "details": "Standard Operating Procedure for Boiler B-501 cold startup sequence."
+    },
+    {
+      "id": "doc-002",
+      "label": "OEM-P102A-MANUAL",
+      "type": "Document",
+      "details": "OEM Centrifugal Pump Maintenance Manual. Maintenance rules & bearing specs."
+    },
+    {
+      "id": "doc-003",
+      "label": "REG-OISD-118",
+      "type": "Document",
+      "details": "OISD Layout standard. Requires 15m safe spacing for gas compressors."
+    },
+    {
+      "id": "doc-004",
+      "label": "INSP-PESO-2025",
+      "type": "Document",
+      "details": "PESO inspection certificate. Valid until October 2026."
+    },
+    {
+      "id": "doc-005",
+      "label": "SOP-C301-EMERGENCY",
+      "type": "Document",
+      "details": "Emergency ESD and vent procedures for Compressor C-301."
+    },
+    {
+      "id": "FactoryAct",
+      "label": "Factory Act 1948",
+      "type": "Regulation",
+      "details": "Section 31 covers statutory testing of pressure systems in plants."
+    },
+    {
+      "id": "OISD",
+      "label": "OISD Directorate",
+      "type": "Organization",
+      "details": "Oil Industry Safety Directorate. Sets guidelines for oil/gas sector."
+    },
+    {
+      "id": "PESO",
+      "label": "PESO Authority",
+      "type": "Organization",
+      "details": "Petroleum and Explosives Safety Organization. Indian statutory authority."
+    },
+    {
+      "id": "INC-001",
+      "label": "INC-2025-0812",
+      "type": "Incident",
+      "details": "Pump seal failure. Cavitation due to suction valve blockage. Mechanical seal cracked."
+    },
+    {
+      "id": "INC-002",
+      "label": "INC-2026-0304",
+      "type": "Incident",
+      "details": "Boiler pressure overshoot. Control valve CV-402 stuck in 80% open position."
+    },
+    {
+      "id": "doc-1784567078985",
+      "label": "Factory Spacing Rule 2026",
+      "type": "Document",
+      "details": "Compressor C-301 requires at least 20m of separation distance from nearby assets for compliance with the Factory Spacing Rule 2026...."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "doc-001",
+      "target": "B-501",
+      "label": "operates"
+    },
+    {
+      "id": "e2",
+      "source": "doc-001",
+      "target": "CV-402",
+      "label": "controls"
+    },
+    {
+      "id": "e3",
+      "source": "doc-001",
+      "target": "FactoryAct",
+      "label": "complies_with"
+    },
+    {
+      "id": "e4",
+      "source": "doc-002",
+      "target": "P-102A",
+      "label": "specifies_maintenance"
+    },
+    {
+      "id": "e5",
+      "source": "doc-003",
+      "target": "C-301",
+      "label": "regulates_layout"
+    },
+    {
+      "id": "e6",
+      "source": "doc-003",
+      "target": "OISD",
+      "label": "issued_by"
+    },
+    {
+      "id": "e7",
+      "source": "doc-004",
+      "target": "B-501",
+      "label": "certifies_hydrotest"
+    },
+    {
+      "id": "e8",
+      "source": "doc-004",
+      "target": "PESO",
+      "label": "approved_by"
+    },
+    {
+      "id": "e9",
+      "source": "doc-005",
+      "target": "C-301",
+      "label": "safeguards"
+    },
+    {
+      "id": "e10",
+      "source": "INC-001",
+      "target": "P-102A",
+      "label": "occurred_on"
+    },
+    {
+      "id": "e11",
+      "source": "INC-001",
+      "target": "doc-002",
+      "label": "violates_manual"
+    },
+    {
+      "id": "e12",
+      "source": "INC-002",
+      "target": "B-501",
+      "label": "occurred_on"
+    },
+    {
+      "id": "e13",
+      "source": "INC-002",
+      "target": "CV-402",
+      "label": "involved_valve"
+    },
+    {
+      "id": "e14",
+      "source": "INC-002",
+      "target": "doc-001",
+      "label": "deviated_from_sop"
+    },
+    {
+      "id": "e-doc-1784567078985-C-301",
+      "source": "doc-1784567078985",
+      "target": "C-301",
+      "label": "references"
+    }
+  ]
+}

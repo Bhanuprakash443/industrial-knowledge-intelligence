@@ -1,0 +1,66 @@
+[
+  {
+    "authority": "PESO",
+    "standard_id": "PESO-RULE-18",
+    "description": "Statutory hydrotesting and examination of pressure vessels (Boiler B-501) every 2 years or after major repairs.",
+    "associated_equipment": "Boiler B-501",
+    "status": "Compliant",
+    "last_audit": "2025-10-05",
+    "next_audit": "2026-10-04",
+    "audit_evidence": "INSP-PESO-2025: Hydrotest successful at 45 kg/cm2, certified by Vadodara Deputy Controller.",
+    "gaps": "None, but fuel gas piping pitting noted near pipe rack support 12B requires rectification.",
+    "checklist": [
+      { "item": "Hydrostatic pressure testing at 1.5x design limit", "checked": true },
+      { "item": "Calibrate and pop-test pressure relief valves", "checked": true },
+      { "item": "Ultrasonic thickness measurement of boiler shell", "checked": true }
+    ]
+  },
+  {
+    "authority": "OISD",
+    "standard_id": "OISD-118-SEC4",
+    "description": "Minimum safety spacing of 15 meters between hydrocarbon gas compressors and active fired heaters or sub-stations.",
+    "associated_equipment": "Compressor C-301",
+    "status": "Non-Compliant",
+    "last_audit": "2026-02-10",
+    "next_audit": "2026-08-10",
+    "audit_evidence": "As-built layout drawings show distance from C-301 to MCC-03 substation is 11.8 meters (Required: 15.0m).",
+    "gaps": "Substation MCC-03 is only 11.8 meters from compressor gas casing, violating the 15-meter buffer requirement.",
+    "checklist": [
+      { "item": "Verify 15-meter separation buffer to fired sources/substations", "checked": false },
+      { "item": "Install positive pressurization in MCC-03 substation", "checked": true },
+      { "item": "Ensure high-level LEL gas detectors are interlocked to substation trip", "checked": true }
+    ]
+  },
+  {
+    "authority": "Factory Act",
+    "standard_id": "FACT-1948-SEC31",
+    "description": "Pressure plant operation safety instructions: Safe working pressure limits must be clearly displayed. Proper training for pressure gauge interpretation must be provided to operators.",
+    "associated_equipment": "Boiler B-501",
+    "status": "Compliant",
+    "last_audit": "2025-11-20",
+    "next_audit": "2026-11-20",
+    "audit_evidence": "Operator training records (Nov 2025) and dial stickers visible on Boiler B-501 local control panels.",
+    "gaps": "None.",
+    "checklist": [
+      { "item": "Clearly mark maximum safe pressure limits on dials/consoles", "checked": true },
+      { "item": "Provide logged annual safety refresher training for boiler operators", "checked": true },
+      { "item": "Maintain pressure testing logbooks on site", "checked": true }
+    ]
+  },
+  {
+    "authority": "OISD",
+    "standard_id": "OISD-118-SEC6",
+    "description": "LEL gas detection sensors calibration and gas safety shutdown interlocks testing on a quarterly basis.",
+    "associated_equipment": "Compressor C-301",
+    "status": "Under Review",
+    "last_audit": "2026-04-15",
+    "next_audit": "2026-07-15",
+    "audit_evidence": "Calibration logs exist for April, but July calibration is delayed due to instrument technician availability.",
+    "gaps": "July quarterly LEL calibration is overdue by 5 days, posing a minor compliance deviation.",
+    "checklist": [
+      { "item": "Calibrate all gas detectors with 50% methane test gas", "checked": false },
+      { "item": "Verify trip signal transmission to DCS and ESD valves", "checked": true },
+      { "item": "Test backup power supply batteries for gas detection cabinet", "checked": true }
+    ]
+  }
+]

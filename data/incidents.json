@@ -1,0 +1,35 @@
+[
+  {
+    "id": "INC-2025-0812",
+    "equipment": "Pump P-102A",
+    "date": "2025-08-12",
+    "symptom": "Heavy fluid leak from primary seal, pump vibration spiked to 8.2 mm/s RMS, high squealing noise.",
+    "investigation": "Suction pressure dropped to 0.5 bar (below required NPSH of 2.1 bar) due to structural blockage from a plastic cleaning rag trapped inside the suction strainer. The pump ran dry for approximately 15 minutes, causing overheating of the double mechanical seal face, which cracked and leaked barrier oil. The low suction pressure alarm was overridden on the control panel by an operator during startup.",
+    "root_cause": "Dry running of mechanical seals due to blocked suction path combined with unauthorized alarm bypass (human error).",
+    "consequence": "Mechanical seal destroyed, 12 hours of unplanned downtime, replacement cost of seal cartridge $4,500.",
+    "corrective_actions": "1. Replace mechanical seal cartridge. 2. Implement interlock bypassing policy (formal supervisor sign-off needed for bypass > 5 mins). 3. Conduct operator training on NPSH requirements and pump dry-running damage.",
+    "lessons_learned": "Never bypass suction low pressure trips on operating centrifugal pumps. Verify suction path clean strainers before startup."
+  },
+  {
+    "id": "INC-2026-0304",
+    "equipment": "Boiler B-501",
+    "date": "2026-03-04",
+    "symptom": "Steam header pressure exceeded 34 kg/cm2, triggering safety valve pop. High combustion chamber temperature.",
+    "investigation": "Feed fuel gas control valve CV-402 failed to respond to DCS control signal. Investigation revealed water contamination in the instrument air supply line, which led to corrosion and sticking of the pneumatic actuator spindle of CV-402 in the 80% open position. Manual isolation valve MV-101 was operated to restrict fuel gas flow and reduce boiler pressure.",
+    "root_cause": "Pneumatic actuator sticking due to moisture/water in instrument air line from failed air dryer pre-filter.",
+    "consequence": "Over-pressure safety valve pop, plant-wide noise warning, minor steam venting, fuel waste, 4 hours of process upset.",
+    "corrective_actions": "1. Replaced instrument air dryer pre-filter cartridge. 2. Cleaned and overhauled actuator spindle for CV-402. 3. Added daily instrument air header water-drain checklist.",
+    "lessons_learned": "Instrument air quality is critical for pneumatic valve operation. Automatic condensate drain traps must be monitored daily."
+  },
+  {
+    "id": "INC-2026-0518",
+    "equipment": "Compressor C-301",
+    "date": "2026-05-18",
+    "symptom": "Gas leak detected (40% LEL) near second-stage discharge flange. Emergency ESD initiated automatically.",
+    "investigation": "Thermal cycling and vibration caused bolt relaxation on the 6-inch discharge flange. The gasket (spiral wound SS316 with graphite filler) had degraded due to severe vibration levels (7.1 mm/s RMS vs threshold of 4.5 mm/s RMS) on the second-stage cylinder piping support structure.",
+    "root_cause": "Flange bolt relaxation and gasket failure induced by excessive pipe vibration from a cracked support structural beam.",
+    "consequence": "Immediate automatic ESD trip, 8 hours shutdown, replacement of gasket, re-welding of support structure. High safety risk due to gas venting.",
+    "corrective_actions": "1. Replaced discharge flange gasket. 2. Welded and reinforced the cracked support structural beam. 3. Installed online wireless vibration sensor on piping support for early warning.",
+    "lessons_learned": "Vibration on high-pressure piping causes fast metal fatigue and bolt loosening. Piping supports must be inspected during weekly walkdowns."
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "doc-001",
+    "title": "SOP-B501-STARTUP: High-Pressure Boiler B-501 Startup Sequence",
+    "category": "Standard Operating Procedure (SOP)",
+    "equipment": [
+      "Boiler B-501",
+      "Control Valve CV-402"
+    ],
+    "tags": [
+      "Boiler",
+      "Startup",
+      "Pressure",
+      "Thermal",
+      "Safety"
+    ],
+    "content": "Operating procedures for High-Pressure Boiler B-501: Before starting, ensure feed water level is at 55%. Verify that fuel gas line pressure is within 2.5 - 3.0 kg/cm2. Open manual valve MV-101. Purge the combustion chamber for 5 minutes to remove residual combustible gases. Confirm purge completion on panel LIC-501. Ignite pilot burner and stabilize pilot flame. Slowly open primary fuel control valve CV-402, keeping rate of heating below 50°C per hour to prevent thermal stress on tubes. Regulatory reference: Factory Act 1948 Section 31 (Pressure Plants).",
+    "source": "Operations SOP v4.2",
+    "author": "Chief Operating Officer",
+    "last_updated": "2025-11-12"
+  },
+  {
+    "id": "doc-002",
+    "title": "OEM-P102A-MANUAL: Centrifugal Pump P-102A Maintenance Guide",
+    "category": "OEM Operating Manual",
+    "equipment": [
+      "Pump P-102A"
+    ],
+    "tags": [
+      "Pump",
+      "Centrifugal",
+      "Maintenance",
+      "Bearing",
+      "Mechanical Seal"
+    ],
+    "content": "OEM technical manual for Model-X Centrifugal Pump P-102A: The pump uses a double mechanical seal with plan 53B pressurized barrier fluid system. Standard vibration levels should remain below 4.5 mm/s RMS. Radial bearings are type 6309 deep groove ball bearings. Lubrication must use ISO VG 68 turbine oil. Change oil every 4000 operating hours or semi-annually. Typical failure modes include: (1) Seal degradation due to dry running, (2) Bearing wear due to oil contamination, (3) Cavitation due to suction pressure dropping below NPSH required (2.1 meters).",
+    "source": "Kirloskar OEM Manual Rev B",
+    "author": "Technical Support Division",
+    "last_updated": "2023-05-18"
+  },
+  {
+    "id": "doc-003",
+    "title": "REG-OISD-118: Safety and Layout Guidelines for Gas Compressors",
+    "category": "Regulatory Guideline",
+    "equipment": [
+      "Compressor C-301"
+    ],
+    "tags": [
+      "OISD",
+      "Regulatory",
+      "Safety Distance",
+      "Compressor",
+      "Hazardous Area"
+    ],
+    "content": "OISD-118 Standard for Layout and Safety in Oil & Gas Compressors: Reciprocating gas compressors handling flammable gases must be located in open or well-ventilated shelters. A minimum safety clearance of 15 meters must be maintained between the compressor shelter and any active fired heater or sub-station. Emergency shutdown (ESD) valves must be located at least 15 meters away from the compressor casing. Gas detection systems (LEL sensors) must be calibrated quarterly and set to alarm at 20% LEL and trip at 60% LEL. Compliance with PESO (Petroleum and Explosives Safety Organization) is mandatory.",
+    "source": "OISD Standards Library",
+    "author": "Oil Industry Safety Directorate",
+    "last_updated": "2024-01-10"
+  },
+  {
+    "id": "doc-004",
+    "title": "INSP-PESO-2025: Statutory Inspection Certificate for Pressure Vessel B-501",
+    "category": "Inspection Report",
+    "equipment": [
+      "Boiler B-501"
+    ],
+    "tags": [
+      "PESO",
+      "Inspection",
+      "Statutory",
+      "Boiler",
+      "Compliance"
+    ],
+    "content": "Petroleum and Explosives Safety Organization (PESO) inspector report: Hydrostatic testing of Boiler B-501 was performed on 2025-10-05 at a test pressure of 45 kg/cm2 (1.5x design pressure). No visible deformation, leakage, or pressure drop observed over 30 minutes. Safety relief valves RV-501A and RV-501B were pop-tested and verified at 32 kg/cm2 set pressure. Clearance granted for operations up to 30 kg/cm2 pressure. Next statutory hydrotest due on or before 2026-10-04. Warning: Fuel gas feed lines show minor external pitting near pipe rack support 12B; corrosion treatment recommended before next quarterly review.",
+    "source": "PESO Regional Office, Vadodara",
+    "author": "Deputy Chief Controller of Explosives",
+    "last_updated": "2025-10-06"
+  },
+  {
+    "id": "doc-005",
+    "title": "SOP-C301-EMERGENCY: Emergency Trip and Shutdown of Gas Compressor C-301",
+    "category": "Standard Operating Procedure (SOP)",
+    "equipment": [
+      "Compressor C-301"
+    ],
+    "tags": [
+      "Compressor",
+      "Emergency",
+      "Shutdown",
+      "ESD",
+      "Safety"
+    ],
+    "content": "Emergency shutdown sequence for Gas Compressor C-301: In case of high discharge temperature (> 125°C), high vibration (> 7.5 mm/s RMS), or hydrocarbon gas leak detection: (1) Press the ESD-301 button on the local panel or DCS console. (2) Confirm automatic closure of suction and discharge ESD valves. (3) Confirm opening of blowdown valve BDV-301 to vent gas to flare. (4) Verify auxiliary lube oil pump starts automatically to maintain cooling. (5) Isolate electrical supply at breaker panel MCC-03. Contact maintenance supervisor immediately.",
+    "source": "Safety Procedures Vol II",
+    "author": "Safety Committee Chairman",
+    "last_updated": "2025-08-30"
+  },
+  {
+    "id": "doc-1784567078985",
+    "title": "Factory Spacing Rule 2026",
+    "category": "Inspection Report",
+    "equipment": [
+      "C-301"
+    ],
+    "tags": [
+      "Ingested",
+      "Inspection Report"
+    ],
+    "content": "Compressor C-301 requires at least 20m of separation distance from nearby assets for compliance with the Factory Spacing Rule 2026.",
+    "source": "Web Input Dashboard",
+    "author": "System Agent",
+    "last_updated": "2026-07-20"
+  }
+]
