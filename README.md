@@ -76,3 +76,18 @@ The repository contains a `render.yaml` blueprint:
    - **Build Command**: `npm install && npm run build`
    - **Start Command**: `npm start`
 4. Optionally specify `GEMINI_API_KEY` in Render's environment variable panel to activate live generative AI completions!
+
+<img width="1910" height="882" alt="image" src="https://github.com/user-attachments/assets/3128b487-03c6-4630-8273-07cae30c889b" />
+
+<img width="1900" height="842" alt="image" src="https://github.com/user-attachments/assets/0f8b1291-29d5-44e9-a3ea-13884d873d84" />
+
+<img width="1917" height="893" alt="image" src="https://github.com/user-attachments/assets/14f28091-e0ea-433f-b48f-bbe55e343070" />
+
+<img width="1177" height="842" alt="image" src="https://github.com/user-attachments/assets/fe5ab7c9-55d0-4aaa-9677-613494aa5fdd" />
+
+<img width="1908" height="882" alt="image" src="https://github.com/user-attachments/assets/3add2079-d673-47a6-a4fb-ac3c0873cfa7" />
+
+<img width="1917" height="862" alt="image" src="https://github.com/user-attachments/assets/690dc930-d153-48bb-8a62-2dae72f7a8ea" />
+
+<img width="1917" height="892" alt="image" src="https://github.com/user-attachments/assets/e229fb85-bda8-4f97-ba7b-9db821a77ef0" />
+
